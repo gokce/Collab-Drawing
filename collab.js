@@ -1,5 +1,6 @@
 // Collaborative Drawing
 // Gokce Taskan
+// To be used with p5.js
 
 Collab = {
   id: "",
