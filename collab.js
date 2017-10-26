@@ -100,6 +100,7 @@ Collab = {
           var call = calls[i];
           //if (call === undefined) { continue; }
           var name = Object.keys(call)[0];
+          if (name == "background") { continue; }
           var values = call[name];
           // Handle empty call (function call without any parameters)
           if (values.length == 1 && values[0] == "") { values = null }
