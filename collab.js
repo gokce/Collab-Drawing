@@ -103,7 +103,12 @@ Collab = {
           var values = call[name];
           // Handle empty call (function call without any parameters)
           if (values.length == 1 && values[0] == "") { values = null }
-          window[name].apply(this, values);
+          try {
+            window[name].apply(this, values);
+          }
+          catch(err) {
+            console.log("Unknown Error");
+          }
         }
       }
     });
