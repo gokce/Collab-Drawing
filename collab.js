@@ -53,7 +53,7 @@ Collab = {
   },
   call: function() {
     // Register call to calls array
-    let allowedCalls = ["background", "ellipse", "rect", "line", "stroke", "noStroke", "fill", "rectMode", "text"];
+    let allowedCalls = ["background", "ellipse", "rect", "line", "stroke", "noStroke", "fill", "rectMode", "text", "textSize"];
     let args = Array.prototype.slice.call(arguments);
     let name = args[0];
     let values = args.slice(1);
